@@ -1,12 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 .container {
     display: flex;
     flex-flow: wrap;
+    width:960px;
+    height:960px;
 }
 
 .container div {
-    width: 200px;
-    height: 100px;
-    background-color: black;
-    border-color: red;
-    border-style: solid;
+    flex: 1;
+    min-height: 1px;
+    min-width: 40px;
 }
