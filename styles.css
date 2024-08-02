@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.container div {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    border-color: red;
+    border-style: solid;
+}
