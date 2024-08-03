@@ -28,6 +28,7 @@ function changeGridSize() {
         alert("Invalid Entry");
         return;
     }
+    opacity = 0;
     let length = 960/squareNum
     container.innerHTML = " "
     for (let i = 0; i < squareNum; i++){
