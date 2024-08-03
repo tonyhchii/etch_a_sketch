@@ -4,7 +4,7 @@ const changeSizeButton = document.querySelector("#changeSize");
 changeGridSize()
 
 
-function colorChange(content) {
+function styleChange(content) {
     content.style.backgroundColor = "black";
 }
 
@@ -16,12 +16,14 @@ function changeGridSize() {
         alert("Invalid Entry");
         return;
     }
-    container.innerHTML = "";
+    let length = 960/squareNum
+    container.innerHTML = " "
     for (let i = 0; i < squareNum; i++){
         for (let j = 0; j < squareNum; j++) {
             let content = document.createElement("div");
+            content.style.width = length + 'px'
             content.addEventListener('mouseover', function() {
-            colorChange(content);
+            styleChange(content);
             });
             container.append(content);
         }
