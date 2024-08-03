@@ -1,11 +1,23 @@
 const container = document.querySelector(".container");
-const changeSizeButton = document.querySelector("#changeSize");
+const changeSizeButton = document.querySelector("#changeSize")
+let opacity = 0;
 
 changeGridSize()
 
 
 function styleChange(content) {
     content.style.backgroundColor = "black";
+    content.style.opacity = opacity + "%";
+    if (opacity < 100) {
+        opacity += 10;
+    }
+}
+
+function randomColorGenerator() {
+    let r = Math.floor(Math.random() * 255);
+    let g = Math.floor(Math.random() * 255);
+    let b = Math.floor(Math.random() * 255);
+    return "(" + r + "," + g + "," + b + ")"
 }
 
 changeSizeButton.addEventListener("click", changeGridSize);
