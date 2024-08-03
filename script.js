@@ -6,7 +6,7 @@ changeGridSize()
 
 
 function styleChange(content) {
-    content.style.backgroundColor = "black";
+    content.style.backgroundColor = "rgb" + randomColorGenerator();
     content.style.opacity = opacity + "%";
     if (opacity < 100) {
         opacity += 10;
